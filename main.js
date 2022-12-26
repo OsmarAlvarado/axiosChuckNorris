@@ -16,6 +16,7 @@ axios
                 <a href="#" class='categories'>${categorie}</a>                
                 ` //me muestra el nombre de las categorias en los links
             allCategories.push(categorie)
+            console.log(categorie);
         })
 
         const toClick = document.querySelectorAll('.categories')
@@ -33,6 +34,8 @@ axios
                         const Joke = response.data.value
                         categoriesList.innerHTML = `JOKE: <p id="jokeP">${Joke}<p>`
                     })
+
+                console.log(categoriesList.innerHTML);
             }
         })
 
